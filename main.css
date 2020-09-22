@@ -73,6 +73,8 @@ p {
 }
 /* ----- Nav ----- */
 
+/* ----- Original NavBar ----- /
+
 .nav {
 
     display: flex;
@@ -107,6 +109,90 @@ p {
 .LetsChat img {
 
     margin-right: 10px;
+}
+
+/* ----- Second Navbar ----- */
+
+.container {
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    
+    line-height: 60px;
+    background: #ffffff;
+    border-bottom: 3px solid rgb(186, 208, 212);
+    
+}
+
+.logo {
+    
+    
+    flex: 1;
+    margin-top: 10px;
+    float: left;
+    
+
+}
+
+.cherie {
+
+    float: left;
+    width: 263px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    list-style: none;
+    padding-left: 23px;
+    padding-top: 2px;
+    
+    
+}
+
+
+.menu {
+
+    float: right;
+}
+
+.menu li {
+
+    float: left;
+    width: 133px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    padding-right: 23px;
+    padding-top: 2px;
+}
+
+.menu li a {
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu li:hover {
+    
+    background: rgb(186, 208, 212);
+}
+
+.menu li a:hover {
+
+    color: white;
 }
 
 
@@ -210,7 +296,7 @@ ul {
 
     position: absolute;
     bottom: 0;
-    right: 86%;
+    right: 06%;
 }
 
 .work ul li {
