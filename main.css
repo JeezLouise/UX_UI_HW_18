@@ -26,7 +26,7 @@ html {
 
 body {
 
-    width: 80%;
+    width: 85%;
     margin: auto;
     
 }
@@ -67,7 +67,6 @@ p {
 }
 
 .landing p {
-
     
     margin-top: 20px;
 }
@@ -115,8 +114,10 @@ p {
 
 .container {
 
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
+    background-color: white;
+    position: fixed;
 }
 
 .navbar {
@@ -126,8 +127,6 @@ p {
     height: 100px;
     width: 100%;
     overflow: hidden;
-    
-    line-height: 60px;
     background: #ffffff;
     border-bottom: 3px solid rgb(186, 208, 212);
     
@@ -143,21 +142,6 @@ p {
 
 }
 
-.cherie {
-
-    float: left;
-    width: 263px;
-    height: 65px;
-    line-height: 65px;
-    text-align: center;
-    list-style: none;
-    padding-left: 23px;
-    padding-top: 2px;
-    
-    
-}
-
-
 .menu {
 
     float: right;
@@ -166,7 +150,7 @@ p {
 .menu li {
 
     float: left;
-    width: 133px;
+    width: 160px;
     height: 65px;
     line-height: 65px;
     text-align: center;
@@ -195,8 +179,26 @@ p {
     color: white;
 }
 
+.letschat {
 
-/* ----- Landing ----- */
+    flex: 1;
+    margin-top: 10px;
+    float: left;
+}
+
+.sticky {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+
+    padding-top: 60px;
+}
+
+/* ----- Personal Content (Landing) ----- */
 
 .landing {
 
@@ -208,7 +210,7 @@ p {
 
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .landingR {
@@ -235,6 +237,27 @@ ul {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.button {
+
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    padding: 20px;
+    color: black;
+    font-size: 18px; 
+    border: 3px solid black;
+    margin:0 5px;
+    position: center;
+    margin-top: 40px;
+
+}
+  
+.button:hover {
+    
+    border: 3px solid rgb(186, 208, 212);
+    background-color: rgb(186, 208, 212);
+
 }
 
 /* ----- Skills ----- */
@@ -268,7 +291,7 @@ ul {
 .work > .workText {
 
     position: absolute;
-    top: 85px;
+    top: 75px;
     left: 0;
     text-align: left;
 }
@@ -278,25 +301,25 @@ ul {
     display: block;
     background-color: #C2D8E0;
     height: 3px;
-    width: 61px;
+    width: 43px;
     margin-top: 5px;
     float: left;
 }
 
 .work > .workImg {
 
-    width: 85%;
+    width: 73%;
     float: right;
-    -webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
-    -moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
-    box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
+    -webkit-box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
+    -moz-box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
+    box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
 }
 
 .work ul {
 
     position: absolute;
     bottom: 0;
-    right: 06%;
+    right: 75%;
 }
 
 .work ul li {
@@ -316,7 +339,7 @@ ul {
 .work2 > .workText {
 
     position: absolute;
-    top: 85px;
+    top: 75px;
     right: 0;
     text-align: right;
     
@@ -327,31 +350,175 @@ ul {
     display: block;
     background-color: #C2D8E0;
     height: 3px;
-    width: 61px;
+    width: 43px;
     margin-top: 5px;
     float: right;
 }
 
 .work2 > .workImg {
 
-    width: 83%;
+    width: 73%;
     float: left;
-    -webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
-    -moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
-    box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
+    -webkit-box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
+    -moz-box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
+    box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
 }
 
 .work2 ul {
 
     position: absolute;
     bottom: 0;
-    left: 84%;
+    left: 75%;
 }
 
 .work2 ul li {
 
     margin-top: 23px;
 }
+
+/* ----- Illustrations -----*/
+
+.work3 {
+
+    width: 100%;
+    position: relative;
+    margin-bottom: 20em
+}
+
+.work3 > .workText {
+
+    position: absolute;
+    top: 75px;
+    left: 0;
+    text-align: left;
+}
+
+.work3 > .workText > .underline {
+
+    display: block;
+    background-color: #C2D8E0;
+    height: 3px;
+    width: 43px;
+    margin-top: 5px;
+    float: left;
+}
+
+.work3 > .workImg {
+
+    width: 73%;
+    float: right;
+    -webkit-box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
+    -moz-box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
+    box-shadow: 0px 5px 50px 0px rgba(23, 30, 36, 0.06);
+}
+
+.work3 ul {
+
+    position: absolute;
+    bottom: 0;
+    right: 75%;
+}
+
+.work3 ul li {
+
+    margin-top: 23px;
+}
+
+
+
+/* ----- Footer ----- */
+
+.container {
+
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+    position: fixed;
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    border-bottom: 3px solid rgb(186, 208, 212);
+    
+}
+
+.logo {
+    
+    
+    flex: 1;
+    margin-top: 10px;
+    float: left;
+    
+
+}
+
+.footer {
+
+    float: right;
+}
+
+.footer li {
+
+    float: left;
+    width: 160px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    padding-right: 23px;
+    padding-top: 2px;
+}
+
+.footer li a {
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+
+.footer li:hover {
+    
+    background: rgb(186, 208, 212);
+}
+
+.footer li a:hover {
+
+    color: white;
+}
+
+.letschat {
+
+    flex: 1;
+    margin-top: 10px;
+    float: left;
+}
+
+.initials {
+    
+    
+    flex: 1;
+    margin-top: 10px;
+    float: left;
+    bottom: left;
+    
+
+}
+
+
+
+
+
+
+
 
 
 
